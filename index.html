@@ -692,28 +692,7 @@ export default function ApresentacaoHTML() {
         <span style={{ fontSize: "13px", color: "#86868b", letterSpacing: ".01em" }}>
           Rodrigo Caio da Silva — Apresentação
         </span>
-        <button
-          onClick={handleDownload}
-          style={{
-            background: "#1d1d1f", color: "#fff",
-            border: "none", borderRadius: "980px",
-            padding: "8px 20px", fontSize: "13px",
-            fontWeight: 500, cursor: "pointer", letterSpacing: ".01em",
-            transition: "opacity 0.2s"
-          }}
-          onMouseEnter={e => e.target.style.opacity = "0.8"}
-          onMouseLeave={e => e.target.style.opacity = "1"}
-        >
-          ↓ Baixar HTML
-        </button>
-      </div>
-
-      {/* Preview iframe */}
-      <iframe
-        srcDoc={htmlContent}
-        style={{ width: "100%", height: "100vh", border: "none", marginTop: 0 }}
-        title="Apresentação Preview"
-      />
+       
     </div>
   );
 }
