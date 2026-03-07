@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.65">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="pt-BR"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Proposta Comercial — Rodrigo Caio da Silva&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>:root {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--black: #1d1d1f;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--gray: #86868b;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--light-gray: #d2d2d7;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--bg-light: #f5f5f7;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>--white: #ffffff;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>html { scroll-behavior: smooth; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--white);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--black);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>-webkit-font-smoothing: antialiased;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow-x: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ─── ANIMATIONS ─── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.fade-in {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>opacity: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: translateY(36px);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: opacity 0.85s cubic-bezier(0.25, 0.1, 0.25, 1), transform 0.85s cubic-bezier(0.25, 0.1, 0.25, 1);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.fade-in.visible {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>opacity: 1;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: translateY(0);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.d1 { transition-delay: 0.1s; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.d2 { transition-delay: 0.2s; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.d3 { transition-delay: 0.3s; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.d4 { transition-delay: 0.4s; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ─── LAYOUT ─── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>section { padding: 96px 24px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media (min-width: 768px) { section { padding: 144px 24px; } }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.container { max-width: 672px; margin: 0 auto; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.container-center { max-width: 672px; margin: 0 auto; text-align: center; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ─── HEADINGS ─── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-label {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 13px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: .2em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-transform: uppercase;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--gray);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>h1 { font-size: clamp(40px, 8vw, 72px); font-weight: 600; line-height: 1.05; letter-spacing: -0.015em; margin-bottom: 24px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>h2 { font-size: clamp(28px, 4vw, 48px); font-weight: 600; line-height: 1.1; letter-spacing: -0.003em; margin-bottom: 32px; }</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.body-lg { font-size: clamp(19px, 2vw, 21px); line-height: 1.58; font-weight: 300; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.text-muted { color: var(--gray); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.mt-12 { margin-top: 48px; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ─── CARDS &amp; GRIDS ─── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.highlight-box { background: var(--bg-light); border-radius: 18px; padding: 40px; margin-top: 48px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.grid-infra { display: flex; flex-direction: column; gap: 24px; margin-top: 40px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.infra-item { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 1px solid var(--light-gray); padding-bottom: 12px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.infra-name { font-weight: 500; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.infra-price { color: var(--gray); font-variant-numeric: tabular-nums; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ─── PRICE TABLE ─── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.investment-card {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: var(--black);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: var(--white);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 48px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 64px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.price-tag { font-size: clamp(48px, 6vw, 64px); font-weight: 600; margin: 24px 0; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.price-tag span { font-size: 20px; font-weight: 300; opacity: 0.6; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ─── BULLETS ─── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.bullet-list { margin-top: 24px; display: flex; flex-direction: column; gap: 12px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.bullet-item { display: flex; align-items: flex-start; gap: 12px; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.bullet-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--gray); margin-top: 10px; flex-shrink: 0; }</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* ─── DARK SECTION ─── */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-dark { background: var(--black); color: var(--white); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.section-dark h2, .section-dark .body-lg { color: var(--white); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.divider { width: 64px; height: 1px; background: var(--light-gray); margin: 48px auto; }</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section id="proposta"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="section-label fade-in"&gt;Documento Oficial&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h1 class="fade-in d1"&gt;Proposta Comercial&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="body-lg text-muted fade-in d2"&gt;Rodrigo Caio da Silva — Gestor de Crescimento&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="bg-light"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="section-label fade-in"&gt;Foco Estratégico&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="fade-in d1"&gt;O Momento da Clínica&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="body-lg fade-in d2"&gt;A Best Body já construiu algo muito importante: pacientes que confiam, reputação consolidada e demanda real.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="highlight-box fade-in d3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="body-lg"&gt;O próximo passo é organizar o crescimento para que ele aconteça com &lt;strong&gt;estrutura, previsibilidade e segurança.&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="section-label fade-in"&gt;Atuação&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="fade-in d1"&gt;Escopo do Trabalho&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="body-lg text-muted fade-in d2"&gt;Gestão completa de crescimento, focando em:&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="bullet-list"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bullet-item fade-in d1"&gt;&lt;span class="bullet-dot"&gt;&lt;/span&gt;&lt;span&gt;Organização de processos internos&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bullet-item fade-in d2"&gt;&lt;span class="bullet-dot"&gt;&lt;/span&gt;&lt;span&gt;Gestão de CRM e leads&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bullet-item fade-in d3"&gt;&lt;span class="bullet-dot"&gt;&lt;/span&gt;&lt;span&gt;Marketing e presença digital&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bullet-item fade-in d4"&gt;&lt;span class="bullet-dot"&gt;&lt;/span&gt;&lt;span&gt;Retenção e relacionamento com pacientes&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="highlight-box fade-in" style="background: var(--white); border: 1px solid var(--light-gray);"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="body-lg"&gt;&lt;strong&gt;"Vocês cuidam dos pacientes. Eu cuido do crescimento."&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="bg-light"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="section-label fade-in"&gt;Tecnologia&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="fade-in d1"&gt;Infraestrutura Tecnológica&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="body-lg text-muted fade-in d2"&gt;Ferramentas profissionais incluídas na proposta para garantir alta performance visual e estratégica.&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="grid-infra"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="infra-item fade-in d1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="infra-name"&gt;Suite de Criação Visual&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-muted" style="font-size: 14px;"&gt;Identidade e Campanhas&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="infra-price"&gt;R$ 280 /mês&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="infra-item fade-in d2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="infra-name"&gt;IA para Estratégia&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-muted" style="font-size: 14px;"&gt;Planejamento e Textos&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="infra-price"&gt;R$ 110 /mês&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="infra-item fade-in d3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="infra-name"&gt;IA Geração de Imagens&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-muted" style="font-size: 14px;"&gt;Criação de Alto Nível&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="infra-price"&gt;R$ 700 /mês&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="mt-12 body-lg fade-in" style="text-align: right; color: var(--gray);"&gt;Total Infraestrutura: &lt;strong&gt;Incluso&lt;/strong&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="section-dark"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="section-label"&gt;Investimento&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Gestão de Crescimento&lt;/h2&gt;</p>
+<p class="p2"><span class="Apple-converted-space">      </span></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="investment-card fade-in"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="body-lg" style="opacity: 0.8;"&gt;Meses 1 a 6 (Estruturação)&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="price-tag"&gt;R$ 6.500 &lt;span&gt;/ mês&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="bullet-list" style="opacity: 0.7; font-size: 16px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="bullet-item"&gt;&lt;span&gt;• Site Institucional (Bônus R$ 4.500)&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="bullet-item"&gt;&lt;span&gt;• Implementação de CRM&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="bullet-item"&gt;&lt;span&gt;• Consultoria Estratégica Contínua&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="investment-card fade-in" style="background: #2c2c2e; margin-top: 32px;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="body-lg" style="opacity: 0.8;"&gt;A partir do mês 7 (Escala)&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="price-tag"&gt;R$ 11.100 &lt;span&gt;/ mês&lt;/span&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="text-muted"&gt;A lógica é simples: quando a clínica cresce, a gestão cresce junto.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="section-label fade-in"&gt;Variável&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="fade-in d1"&gt;Remuneração por Performance&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="highlight-box fade-in d2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p style="font-weight: 500;"&gt;Aquisição via Digital&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="body-lg"&gt;R$ 100 por paciente novo&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="text-muted" style="font-size: 15px; margin-top: 8px;"&gt;Paciente originado pelos canais digitais que realize a primeira consulta.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="bg-light"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="section-label fade-in"&gt;Transparência&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 class="fade-in d1"&gt;Vigência e Condições&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="grid-infra mt-12"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="infra-item fade-in d1"&gt;&lt;span&gt;Prazo mínimo&lt;/span&gt;&lt;strong&gt;30 dias&lt;/strong&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="infra-item fade-in d2"&gt;&lt;span&gt;Aviso prévio&lt;/span&gt;&lt;strong&gt;60 dias&lt;/strong&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="infra-item fade-in d3"&gt;&lt;span&gt;Reajuste Anual&lt;/span&gt;&lt;strong&gt;IGPM / FGV&lt;/strong&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container-center"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="fade-in"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="body-lg" style="font-style: italic; color: var(--gray);"&gt;"E, quando Deus concede riquezas e bens a alguém e o capacita a desfrutá-los, a aceitar a sua sorte e a ser feliz em seu trabalho, isso é um presente de Deus."&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="section-label" style="margin-top: 16px;"&gt;Eclesiastes 5:19&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="divider fade-in d1"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="fade-in d2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3 style="font-size: 28px; font-weight: 600;"&gt;Rodrigo Caio da Silva&lt;/h3&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="text-muted"&gt;Gestor de Crescimento e Expansão&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const observer = new IntersectionObserver((entries) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>entries.forEach(entry =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (entry.isIntersecting) {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>entry.target.classList.add('visible');</p>
+<p class="p1"><span class="Apple-converted-space">          </span>observer.unobserve(entry.target);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}, { threshold: 0.1 });</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>document.querySelectorAll('.fade-in').forEach(el =&gt; observer.observe(el));</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
