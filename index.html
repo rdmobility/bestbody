@@ -661,24 +661,7 @@
     document.querySelectorAll('.fade-in, .scale-in').forEach(el => observer.observe(el));
   </script>
 </body>
-</html>`;
 
-export default function ApresentacaoHTML() {
-  const blobRef = useRef(null);
-
-  useEffect(() => {
-    const blob = new Blob([htmlContent], { type: "text/html" });
-    blobRef.current = URL.createObjectURL(blob);
-  }, []);
-
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = blobRef.current || URL.createObjectURL(new Blob([htmlContent], { type: "text/html" }));
-    link.download = "rodrigo-caio-apresentacao.html";
-    link.click();
-  };
-
-  return (
     <div style={{ fontFamily: "-apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif", background: "#fff", minHeight: "100vh" }}>
       {/* Download bar */}
       <div style={{
