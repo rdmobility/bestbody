@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rodrigo Caio da Silva — Gestão de Crescimento e Expansão</title>
+  <title>Rodrigo Caio da Silva — Gestão de Crescimento para Clínicas</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -405,7 +405,7 @@
     <div class="inner">
       <p class="eyebrow hero-item h1">Carta de Apresentação</p>
       <h1 class="hero-title hero-item h2">Rodrigo Caio<br>da Silva</h1>
-      <p class="hero-subtitle hero-item h3">Gestão de Crescimento e expansão</p>
+      <p class="hero-subtitle hero-item h3">Gestão de Crescimento para Clínicas</p>
       <div class="hero-divider hero-item h4"></div>
       <p class="hero-for hero-item h5">Para a Clínica <strong>Best Body</strong></p>
     </div>
@@ -504,7 +504,7 @@
       <p class="section-label fade-in">Meu trabalho dentro da clínica</p>
       <h2 class="fade-in d1">Meu papel é ajudar a estruturar esse crescimento.</h2>
       <p class="body-lg text-dark mt-10 fade-in d2">
-        Entender o funcionamento da clínica por dentro e organizar processos que permitem crescer com mais eficiência, dentro do formato de atendimento e padrão Best Body.
+        Entender o funcionamento da clínica por dentro e organizar processos que permitem crescer com mais eficiência, mantendo o padrão de atendimento que os pacientes já conhecem.
       </p>
       <p class="body-md text-muted mt-8 fade-in d3">Esse trabalho normalmente envolve:</p>
 
@@ -642,11 +642,23 @@
 
       <div class="signature fade-in d2">
         <h3>Rodrigo Caio da Silva</h3>
-        <p>Gestão de Crescimento, Estrutura e Expansão</p>
+        <p>Gestão de Crescimento e Estrutura para Clínicas</p>
       </div>
     </div>
   </section>
- 
-    </div>
-  );
-}
+
+  <script>
+    // ─── Intersection Observer for scroll animations ───
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+    document.querySelectorAll('.fade-in, .scale-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>`;
