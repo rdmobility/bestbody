@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proposta Comercial — Best Body Clínica de Longevidade</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black:   #111111;
+      --dark:    #222222;
+      --mid:     #888888;
+      --light:   #F2F2F2;
+      --lighter: #F8F8F8;
+      --border:  #E5E5E5;
+      --white:   #FFFFFF;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--white);
+      color: var(--black);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 48px;
+      height: 60px;
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 15px;
+      letter-spacing: 0.5px;
+      color: var(--black);
+    }
+    .nav-logo span { color: var(--mid); font-weight: 400; }
+    .nav-date {
+      font-size: 11px;
+      color: var(--mid);
+      letter-spacing: 0.5px;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 140px 48px 100px;
+      max-width: 960px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .hero-eyebrow {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 24px;
+    }
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(38px, 6vw, 62px);
+      font-weight: 400;
+      color: var(--black);
+      line-height: 1.15;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+    .hero-title em { font-style: italic; color: var(--mid); }
+    .hero-sub {
+      font-size: 16px;
+      color: var(--mid);
+      font-weight: 300;
+      line-height: 1.7;
+      max-width: 520px;
+      margin: 0 auto 48px;
+    }
+    .hero-divider {
+      width: 48px;
+      height: 1px;
+      background: var(--border);
+      margin: 0 auto;
+    }
+
+    /* ── SECTION WRAPPER ── */
+    .section {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 80px 48px;
+    }
+    .section + .section {
+      border-top: 1px solid var(--border);
+    }
+    .section-label {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 48px;
+    }
+
+    /* ── PACOTE DESTAQUE ── */
+    .featured-package {
+      background: var(--black);
+      padding: 56px;
+      margin-bottom: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+    .featured-package::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 220px; height: 220px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+    .featured-package::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; right: 40px;
+      width: 140px; height: 140px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.04);
+    }
+    .package-badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--mid);
+      border: 1px solid #333;
+      padding: 5px 12px;
+      margin-bottom: 28px;
+    }
+    .package-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      color: var(--white);
+      font-weight: 400;
+      margin-bottom: 8px;
+      letter-spacing: -0.5px;
+    }
+    .package-tagline {
+      font-size: 13px;
+      color: #777;
+      font-weight: 300;
+      margin-bottom: 40px;
+    }
+    .package-includes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 48px;
+    }
+    .include-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .include-dot {
+      width: 5px;
+      height: 5px;
+      background: #555;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 7px;
+    }
+    .include-text {
+      font-size: 13.5px;
+      color: #BBBBBB;
+      font-weight: 300;
+      line-height: 1.5;
+    }
+    .package-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      padding-top: 40px;
+      border-top: 1px solid #2A2A2A;
+    }
+    .price-label {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #555;
+      font-weight: 500;
+    }
+    .price-value {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      color: var(--white);
+      font-weight: 400;
+      letter-spacing: -1px;
+    }
+    .price-period {
+      font-size: 13px;
+      color: #555;
+      font-weight: 300;
+      margin-left: 4px;
+    }
+
+    /* ── CARDS UNITÁRIOS ── */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .card {
+      background: var(--lighter);
+      border: 1px solid var(--border);
+      padding: 32px 28px;
+      transition: border-color 0.2s, transform 0.2s;
+      position: relative;
+    }
+    .card:hover {
+      border-color: #CCCCCC;
+      transform: translateY(-3px);
+    }
+    .card-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--light);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    .card-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--black);
+      margin-bottom: 6px;
+      line-height: 1.4;
+    }
+    .card-desc {
+      font-size: 12.5px;
+      color: var(--mid);
+      line-height: 1.65;
+      font-weight: 300;
+      margin-bottom: 24px;
+    }
+    .card-price {
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      color: var(--black);
+      font-weight: 400;
+      letter-spacing: -0.5px;
+    }
+    .card-price-label {
+      font-size: 11px;
+      color: var(--mid);
+      font-weight: 400;
+      margin-top: 2px;
+    }
+    .card-tag {
+      position: absolute;
+      top: 16px; right: 16px;
+      font-size: 9.5px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      background: var(--black);
+      color: var(--white);
+      padding: 4px 8px;
+    }
+
+    /* ── PACOTES MENSAIS ── */
+    .monthly-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+    }
+    .monthly-card {
+      border: 1px solid var(--border);
+      padding: 36px 32px;
+      transition: border-color 0.2s;
+      position: relative;
+    }
+    .monthly-card:hover { border-color: #BBBBBB; }
+    .monthly-card.featured {
+      background: var(--lighter);
+      border-color: #CCCCCC;
+    }
+    .monthly-label {
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--mid);
+      margin-bottom: 16px;
+    }
+    .monthly-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      color: var(--black);
+      margin-bottom: 8px;
+    }
+    .monthly-desc {
+      font-size: 13px;
+      color: var(--mid);
+      font-weight: 300;
+      line-height: 1.6;
+      margin-bottom: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+    .monthly-items {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+    .monthly-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--dark);
+      font-weight: 300;
+    }
+    .monthly-item::before {
+      content: '';
+      width: 4px; height: 4px;
+      background: var(--mid);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .monthly-price {
+      font-family: 'Playfair Display', serif;
+      font-size: 34px;
+      color: var(--black);
+      letter-spacing: -0.5px;
+    }
+    .monthly-price-sub {
+      font-size: 12px;
+      color: var(--mid);
+      font-weight: 300;
+      margin-top: 3px;
+    }
+    .monthly-saving {
+      position: absolute;
+      top: 20px; right: 20px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      background: var(--black);
+      color: var(--white);
+      padding: 4px 10px;
+    }
+
+    /* ── COMPARATIVO ── */
+    .comparison {
+      background: var(--lighter);
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+    .comparison-header {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      background: var(--black);
+      padding: 16px 28px;
+      gap: 8px;
+    }
+    .comparison-header span {
+      font-size: 10.5px;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #888;
+    }
+    .comparison-header span:first-child { color: #555; }
+    .comparison-header span.highlight { color: var(--white); }
+    .comparison-row {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      padding: 16px 28px;
+      gap: 8px;
+      border-bottom: 1px solid var(--border);
+      align-items: center;
+      transition: background 0.15s;
+    }
+    .comparison-row:hover { background: var(--white); }
+    .comparison-row:last-child { border-bottom: none; }
+    .row-name {
+      font-size: 13px;
+      color: var(--dark);
+      font-weight: 400;
+    }
+    .row-val {
+      font-size: 13px;
+      color: var(--mid);
+      font-weight: 300;
+    }
+    .row-val.strong {
+      font-weight: 600;
+      color: var(--black);
+    }
+    .row-val.saving {
+      font-size: 11px;
+      color: #27AE60;
+      font-weight: 500;
+    }
+
+    /* ── FOOTER ── */
+    .page-footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 48px;
+      max-width: 960px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+    .footer-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 16px;
+      color: var(--black);
+    }
+    .footer-brand span {
+      display: block;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      color: var(--mid);
+      font-weight: 300;
+      margin-top: 2px;
+      letter-spacing: 0.5px;
+    }
+    .footer-note {
+      font-size: 11.5px;
+      color: var(--mid);
+      font-weight: 300;
+      text-align: right;
+      line-height: 1.7;
+    }
+
+    /* ── FADE IN ── */
+    .fade {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade.visible { opacity: 1; transform: translateY(0); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 700px) {
+      nav { padding: 0 24px; }
+      .hero { padding: 110px 24px 70px; }
+      .section { padding: 60px 24px; }
+      .featured-package { padding: 36px 28px; }
+      .package-includes { grid-template-columns: 1fr; }
+      .cards-grid { grid-template-columns: 1fr; }
+      .monthly-grid { grid-template-columns: 1fr; }
+      .comparison-header,
+      .comparison-row { grid-template-columns: 1.6fr 1fr 1fr; }
+      .comparison-header span:nth-child(3),
+      .comparison-row .row-val:nth-child(3) { display: none; }
+      .page-footer { flex-direction: column; align-items: flex-start; }
+      .footer-note { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Best Body <span>Clínica de Longevidade</span></div>
+  <div class="nav-date">Proposta · 2025</div>
+</nav>
+
+<!-- HERO -->
+<div class="hero fade">
+  <div class="hero-eyebrow">Proposta Comercial</div>
+  <h1 class="hero-title">Presença digital <em>completa</em><br>para sua clínica</h1>
+  <p class="hero-sub">Materiais institucionais, presença online e suporte operacional — tudo em um único pacote pensado para clínicas de longevidade.</p>
+  <div class="hero-divider"></div>
+</div>
+
+<!-- PACOTE COMPLETO -->
+<div class="section">
+  <div class="section-label fade">Pacote recomendado</div>
+
+  <div class="featured-package fade">
+    <div class="package-badge">Melhor custo-benefício</div>
+    <div class="package-name">Pacote Completo do Mês</div>
+    <div class="package-tagline">Tudo que sua clínica precisa para comunicar com autoridade</div>
+
+    <div class="package-includes">
+      <div class="include-item">
+        <div class="include-dot"></div>
+        <div class="include-text">Site institucional profissional</div>
+      </div>
+      <div class="include-item">
+        <div class="include-dot"></div>
+        <div class="include-text">10 páginas de suplementos <span style="color:#666;font-size:11.5px;font-weight:300;">— bônus setup (valor R$ 10.000)</span></div>
+      </div>
+      <div class="include-item">
+        <div class="include-dot"></div>
+        <div class="include-text">Redes sociais — 30 dias de conteúdo</div>
+      </div>
+      <div class="include-item">
+        <div class="include-dot"></div>
+        <div class="include-text">Suporte completo para secretária</div>
+      </div>
+      <div class="include-item">
+        <div class="include-dot"></div>
+        <div class="include-text">Materiais em Word, Excel e PDF</div>
+      </div>
+      <div class="include-item">
+        <div class="include-dot"></div>
+        <div class="include-text">Gestão e entrega coordenada</div>
+      </div>
+    </div>
+
+    <div class="package-price-row">
+      <div>
+        <div class="price-label">Valor total do pacote</div>
+        <div style="display:flex;align-items:baseline;gap:6px;margin-top:8px;">
+          <div class="price-value">R$ 5.500</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VALORES UNITÁRIOS -->
+<div class="section">
+  <div class="section-label fade">Valores unitários</div>
+  <div class="cards-grid">
+
+    <div class="card fade">
+      <div class="card-icon">◻</div>
+      <div class="card-title">Site Institucional</div>
+      <div class="card-desc">Site profissional completo, desenvolvido sob medida para clínicas de saúde e longevidade.</div>
+      <div class="card-price">R$ 4.500</div>
+      <div class="card-price-label">valor unitário</div>
+    </div>
+
+    <div class="card fade" style="transition-delay:0.08s">
+      <div class="card-icon">◻</div>
+      <div class="card-title">Página de Suplemento</div>
+      <div class="card-desc">Página educativa individual para cada suplemento ou vitamina da clínica.</div>
+      <div class="card-price">R$ 1.000</div>
+      <div class="card-price-label">por página</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SERVIÇOS MENSAIS PACOTE -->
+<div class="section">
+  <div class="section-label fade">Serviços mensais pacote</div>
+  <div class="monthly-grid">
+
+    <div class="monthly-card fade">
+      <div class="monthly-label">Mensal · Unitário</div>
+      <div class="monthly-title">Redes Sociais</div>
+      <div class="monthly-desc">Gestão completa das redes sociais com conteúdo estratégico, criação de peças e publicações por 30 dias.</div>
+      <div class="monthly-items">
+        <div class="monthly-item">30 dias de conteúdo</div>
+        <div class="monthly-item">Criação de peças e legendas</div>
+        <div class="monthly-item">Planejamento estratégico</div>
+      </div>
+      <div class="monthly-price">R$ 3.500</div>
+      <div class="monthly-price-sub">por mês</div>
+    </div>
+
+    <div class="monthly-card fade" style="transition-delay:0.08s">
+      <div class="monthly-label">Pacote Especial</div>
+      <div class="monthly-title">6 Páginas de Suplemento</div>
+      <div class="monthly-desc">Pacote com 6 páginas educativas — R$ 500 por página. Economia de R$ 3.000 em relação ao valor unitário.</div>
+      <div class="monthly-items">
+        <div class="monthly-item">6 páginas de suplementos</div>
+        <div class="monthly-item">R$ 500 por página</div>
+        <div class="monthly-item">Economia de R$ 3.000</div>
+      </div>
+      <div class="monthly-price">R$ 3.000</div>
+      <div class="monthly-price-sub">preço de pacote</div>
+    </div>
+
+    <div class="monthly-card featured fade" style="transition-delay:0.16s">
+      <div class="monthly-saving">Mais completo</div>
+      <div class="monthly-label">Mensal · Pacote</div>
+      <div class="monthly-title">Redes + Suporte + Materiais</div>
+      <div class="monthly-desc">Pacote integrado com redes sociais, suporte para secretária e todos os materiais de apoio. Não inclui site.</div>
+      <div class="monthly-items">
+        <div class="monthly-item">Redes sociais — 30 dias</div>
+        <div class="monthly-item">Suporte para secretária</div>
+        <div class="monthly-item">Materiais Word, PDF e Excel</div>
+        <div class="monthly-item">Páginas de suplementos</div>
+      </div>
+      <div class="monthly-price">R$ 4.500</div>
+      <div class="monthly-price-sub">por mês · não inclui site</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- COMPARATIVO -->
+<div class="section">
+  <div class="section-label fade">Comparativo de valores</div>
+
+  <div class="comparison fade">
+    <!-- HEADER -->
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr;background:var(--black);padding:16px 28px;gap:8px;">
+      <span style="font-size:10.5px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:#555;">Serviço / Item</span>
+      <span style="font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#888;text-align:center;">Valor Avulso</span>
+      <span style="font-size:10px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--white);text-align:center;">Pacote Completo</span>
+    </div>
+
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr;padding:14px 28px;gap:8px;border-bottom:1px solid var(--border);align-items:center;">
+      <div style="font-size:13px;color:var(--dark);">Site institucional</div>
+      <div style="font-size:13px;color:var(--mid);text-align:center;">R$ 4.500</div>
+      <div style="text-align:center;"><span style="font-size:12px;font-weight:600;color:#27AE60;">Incluso</span></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr;padding:14px 28px;gap:8px;border-bottom:1px solid var(--border);align-items:center;background:var(--lighter);">
+      <div style="font-size:13px;color:var(--dark);">Página de suplemento (avulsa)</div>
+      <div style="font-size:13px;color:var(--mid);text-align:center;">R$ 1.000</div>
+      <div style="text-align:center;"><span style="font-size:12px;font-weight:600;color:#27AE60;">Incluso</span></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr;padding:14px 28px;gap:8px;border-bottom:1px solid var(--border);align-items:center;">
+      <div style="font-size:13px;color:var(--dark);">6 páginas de suplemento (pacote)</div>
+      <div style="font-size:13px;color:var(--mid);text-align:center;">R$ 3.000</div>
+      <div style="text-align:center;"><span style="font-size:12px;font-weight:600;color:#27AE60;">Incluso</span></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr;padding:14px 28px;gap:8px;border-bottom:1px solid var(--border);align-items:center;background:var(--lighter);">
+      <div style="font-size:13px;color:var(--dark);">Redes sociais — 30 dias</div>
+      <div style="font-size:13px;color:var(--mid);text-align:center;">R$ 3.500</div>
+      <div style="text-align:center;"><span style="font-size:12px;font-weight:600;color:#27AE60;">Incluso</span></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr;padding:14px 28px;gap:8px;border-bottom:1px solid var(--border);align-items:center;">
+      <div style="font-size:13px;color:var(--dark);">Suporte + materiais secretária</div>
+      <div style="font-size:13px;color:var(--mid);text-align:center;">R$ 1.500</div>
+      <div style="text-align:center;"><span style="font-size:12px;font-weight:600;color:#27AE60;">Incluso</span></div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr;padding:14px 28px;gap:8px;border-bottom:1px solid var(--border);align-items:center;background:var(--lighter);">
+      <div style="font-size:13px;color:var(--dark);">Redes + Suporte + Materiais</div>
+      <div style="font-size:13px;color:var(--mid);text-align:center;">R$ 4.500</div>
+      <div style="text-align:center;"><span style="font-size:12px;font-weight:600;color:#27AE60;">Incluso</span></div>
+    </div>
+
+    <!-- TOTAL -->
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr;padding:18px 28px;gap:8px;align-items:center;background:var(--black);">
+      <div style="font-size:13px;font-weight:600;color:var(--white);">Total</div>
+      <div style="text-align:center;font-size:11px;color:#555;">—</div>
+      <div style="text-align:center;">
+        <div style="font-family:'Playfair Display',serif;font-size:24px;color:var(--white);">R$ 5.500</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="page-footer fade">
+  <div class="footer-brand">
+    Best Body
+    <span>Clínica de Longevidade</span>
+  </div>
+  <div class="footer-note">
+    Proposta válida por 15 dias · Valores sujeitos a alteração<br>
+    Material preparado exclusivamente para Best Body
+  </div>
+</div>
+
+<script>
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 70);
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.06 });
+  document.querySelectorAll('.fade').forEach(el => obs.observe(el));
+</script>
+
+</body>
+</html>
